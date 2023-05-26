@@ -47,7 +47,7 @@ to create a new session, followed by "ADD NEW INSTANCE" to launch a new terminal
 
 Notes:
 
-* There is a hard-coded limit to 5 Docker playgrounds per session. After 4 hours sessions are deleted.
+* There is a hard-coded limit to 5 Remote VM Labs per session. After 4 hours sessions are deleted.
 * If you want to override the DIND version or image then set the environmental variable i.e.
   `DIND_IMAGE=franela/docker<version>-rc:dind`. Take into account that you can't use standard `dind` images, only [franela](https://hub.docker.com/r/franela/) ones work.
 
