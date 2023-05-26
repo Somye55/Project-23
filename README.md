@@ -1,11 +1,10 @@
-# play-with-docker
+# Remote VM Labs
 
-Play With Docker gives you the experience of having a free Alpine Linux Virtual Machine in the cloud
+Remote VM Labs gives you the experience of having a free Alpine Linux Virtual Machine in the cloud
 where you can build and run Docker containers and even create clusters with Docker features like Swarm Mode.
 
 Under the hood DIND or Docker-in-Docker is used to give the effect of multiple VMs/PCs.
 
-A live version is available at: http://play-with-docker.com/
 
 ### Requirements
 
@@ -15,9 +14,6 @@ A live version is available at: http://play-with-docker.com/
 ### Development
 
 ```bash
-# Clone this repo locally
-git clone https://github.com/play-with-docker/play-with-docker
-cd play-with-docker
 
 # Verify the Docker daemon is running
 docker run hello-world
@@ -63,14 +59,4 @@ address=/localhost/127.0.0.1
 
 Don't forget to change your computer default DNS to use the dnsmasq server to resolve.
 
-## FAQ
 
-### How can I connect to a published port from the outside world?
-
-
-If you need to access your services from outside, use the following URL pattern `http://ip<hyphen-ip>-<session_jd>-<port>.direct.labs.play-with-docker.com` (i.e: http://ip-2-135-3-b8ir6vbg5vr00095iil0-8080.direct.labs.play-with-docker.com).
-
-### Why is PWD running in ports 80 and 443?, Can I change that?.
-
-No, it needs to run on those ports for DNS resolve to work. Ideas or suggestions about how to improve this
-are welcome
