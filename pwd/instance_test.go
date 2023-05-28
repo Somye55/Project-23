@@ -71,7 +71,7 @@ func TestInstanceNew(t *testing.T) {
 	p := NewPWD(_f, _e, _s, sp, ipf)
 	p.generator = _g
 
-	playground := &types.Playground{Id: "foobar", DefaultDinDInstanceImage: "franela/dind"}
+	playground := &types.Playground{Id: "foobar", DefaultDinDInstanceImage: "shashwatpp/dind"}
 
 	_s.On("PlaygroundGet", "foobar").Return(playground, nil)
 
@@ -84,7 +84,7 @@ func TestInstanceNew(t *testing.T) {
 		Hostname:    "node1",
 		IP:          "10.0.0.1",
 		RoutableIP:  "10.0.0.1",
-		Image:       "franela/dind",
+		Image:       "shashwatpp/dind",
 		SessionId:   session.Id,
 		SessionHost: session.Host,
 		ProxyHost:   router.EncodeHost(session.Id, "10.0.0.1", router.HostOpts{}),

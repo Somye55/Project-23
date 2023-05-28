@@ -32,7 +32,7 @@ func TestPlaygroundNew(t *testing.T) {
 	p := NewPWD(_f, _e, _s, sp, ipf)
 	p.generator = _g
 
-	expectedPlayground := types.Playground{Domain: "localhost", DefaultDinDInstanceImage: "franela/dind", AllowWindowsInstances: false, DefaultSessionDuration: time.Hour * 3, Extras: types.PlaygroundExtras{"foo": "bar"}}
+	expectedPlayground := types.Playground{Domain: "localhost", DefaultDinDInstanceImage: "shashwatpp/dind", AllowWindowsInstances: false, DefaultSessionDuration: time.Hour * 3, Extras: types.PlaygroundExtras{"foo": "bar"}}
 	playground, e := p.PlaygroundNew(expectedPlayground)
 	assert.Nil(t, e)
 	assert.NotNil(t, playground)
@@ -64,7 +64,7 @@ func TestPlaygroundGet(t *testing.T) {
 	p := NewPWD(_f, _e, _s, sp, ipf)
 	p.generator = _g
 
-	expectedPlayground := types.Playground{Domain: "localhost", DefaultDinDInstanceImage: "franela/dind", AllowWindowsInstances: false, DefaultSessionDuration: time.Hour * 3, Extras: types.PlaygroundExtras{"foo": "bar"}}
+	expectedPlayground := types.Playground{Domain: "localhost", DefaultDinDInstanceImage: "shashwatpp/dind", AllowWindowsInstances: false, DefaultSessionDuration: time.Hour * 3, Extras: types.PlaygroundExtras{"foo": "bar"}}
 	playground, e := p.PlaygroundNew(expectedPlayground)
 	assert.Nil(t, e)
 	assert.NotNil(t, playground)
@@ -100,7 +100,7 @@ func TestPlaygroundFindByDomain(t *testing.T) {
 	p := NewPWD(_f, _e, _s, sp, ipf)
 	p.generator = _g
 
-	expectedPlayground := types.Playground{Domain: "localhost", DefaultDinDInstanceImage: "franela/dind", AllowWindowsInstances: false, DefaultSessionDuration: time.Hour * 3, Extras: types.PlaygroundExtras{"foo": "bar"}}
+	expectedPlayground := types.Playground{Domain: "localhost", DefaultDinDInstanceImage: "shashwatpp/dind", AllowWindowsInstances: false, DefaultSessionDuration: time.Hour * 3, Extras: types.PlaygroundExtras{"foo": "bar"}}
 	playground, e := p.PlaygroundNew(expectedPlayground)
 	assert.Nil(t, e)
 	assert.NotNil(t, playground)
@@ -137,12 +137,12 @@ func TestPlaygroundList(t *testing.T) {
 	p := NewPWD(_f, _e, _s, sp, ipf)
 	p.generator = _g
 
-	pd := types.Playground{Domain: "localhost1", DefaultDinDInstanceImage: "franela/dind", AllowWindowsInstances: false, DefaultSessionDuration: time.Hour * 3, Extras: types.PlaygroundExtras{"foo": "bar"}}
+	pd := types.Playground{Domain: "localhost1", DefaultDinDInstanceImage: "shashwatpp/dind", AllowWindowsInstances: false, DefaultSessionDuration: time.Hour * 3, Extras: types.PlaygroundExtras{"foo": "bar"}}
 	p1, e := p.PlaygroundNew(pd)
 	assert.Nil(t, e)
 	assert.NotNil(t, p1)
 
-	pd = types.Playground{Domain: "localhost2", DefaultDinDInstanceImage: "franela/dind", AllowWindowsInstances: false, DefaultSessionDuration: time.Hour * 3, Extras: types.PlaygroundExtras{"foo": "bar"}}
+	pd = types.Playground{Domain: "localhost2", DefaultDinDInstanceImage: "shashwatpp/dind", AllowWindowsInstances: false, DefaultSessionDuration: time.Hour * 3, Extras: types.PlaygroundExtras{"foo": "bar"}}
 	p2, e := p.PlaygroundNew(pd)
 	assert.Nil(t, e)
 	assert.NotNil(t, p2)

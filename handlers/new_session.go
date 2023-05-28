@@ -109,7 +109,7 @@ func formatStack(stack string) string {
 	}
 	if strings.HasPrefix(stack, "/") {
 		// The host is anonymous, then use our own stack repo.
-		stack = fmt.Sprintf("%s%s", "https://raw.githubusercontent.com/play-with-docker/stacks/master", stack)
+		stack = fmt.Sprintf("%s%s", "https://raw.githubusercontent.com/Project-23/stacks/master", stack)
 	}
 	return stack
 }

@@ -25,8 +25,8 @@ sudo modprobe xt_ipvs
 # Ensure Docker daemon is running in swarm mode
 docker swarm init
 
-# Get the latest franela/dind image
-docker pull franela/dind
+# Get the latest shashwatpp/dind image
+docker pull shashwatpp/dind
 
 # Optional (with go1.14): pre-fetch module requirements into vendor
 # so that no network requests are required within the containers.
