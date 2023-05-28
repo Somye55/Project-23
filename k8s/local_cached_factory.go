@@ -6,8 +6,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/play-with-docker/play-with-docker/pwd/types"
-	"github.com/play-with-docker/play-with-docker/storage"
+	"github.com/Somye55/Project-23/pwd/types"
+	"github.com/Somye55/Project-23/storage"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes"
 )

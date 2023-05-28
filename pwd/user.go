@@ -3,8 +3,8 @@ package pwd
 import (
 	"errors"
 
-	"github.com/play-with-docker/play-with-docker/pwd/types"
-	"github.com/play-with-docker/play-with-docker/storage"
+	"github.com/Somye55/Project-23/pwd/types"
+	"github.com/Somye55/Project-23/storage"
 )
 
 var userBannedError = errors.New("User is banned")

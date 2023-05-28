@@ -5,9 +5,9 @@ import (
 	"log"
 
 	"github.com/docker/docker/api/types/swarm"
-	"github.com/play-with-docker/play-with-docker/docker"
-	"github.com/play-with-docker/play-with-docker/event"
-	"github.com/play-with-docker/play-with-docker/pwd/types"
+	"github.com/Somye55/Project-23/docker"
+	"github.com/Somye55/Project-23/event"
+	"github.com/Somye55/Project-23/pwd/types"
 )
 
 type checkSwarmStatus struct {
